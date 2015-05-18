@@ -11,9 +11,9 @@ angular.module('demo', ['n3-line-chart'])
 
     $scope.options = {
       axes: {
-        x: {key: 'x', ticksFormat: '.2f', type: 'linear', min: 0, max: 10, ticks: 2},
-        y: {type: 'linear', min: 0, max: 1, ticks: 5},
-        y2: {type: 'linear', min: 0, max: 1, ticks: [1, 2, 3, 4]}
+        x: {key: 'x', ticksFormat: '.2f', type: 'linear'},
+        y: {type: 'linear', ticks: 5},
+        y2: {type: 'linear', ticks: [1, 2, 3, 4]}
       },
       margin: {
         left: 100

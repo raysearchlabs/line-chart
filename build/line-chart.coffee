@@ -1,5 +1,5 @@
 ###
-line-chart - v1.1.7 - 05 February 2015
+line-chart - v1.1.7 - 18 May 2015
 https://github.com/n3-charts/line-chart
 Copyright (c) 2015 n3-charts
 ###
@@ -17,7 +17,7 @@ directive('linechart', ['n3utils', '$window', '$timeout', (n3utils, $window, $ti
     dim = _u.getDefaultMargins()
 
     # Hacky hack so the chart doesn't grow in height when resizing...
-    element[0].style['font-size'] = 0
+    #element[0].style['font-size'] = 0
 
     scope.updateDimensions = (dimensions) ->
       parent = element[0].parentElement
@@ -117,7 +117,7 @@ directive('linechart', ['n3utils', '$window', '$timeout', (n3utils, $window, $ti
 
 # ----
 
-# /tmp/utils.coffee
+# C:/tmp/utils.coffee
 mod = angular.module('n3charts.utils', [])
 
 mod.factory('n3utils', ['$window', '$log', '$rootScope', ($window, $log, $rootScope) ->
@@ -1025,7 +1025,7 @@ mod.factory('n3utils', ['$window', '$log', '$rootScope', ($window, $log, $rootSc
 
         style = (group) ->
           group.style(
-            'font': '10px Courier'
+            #'font': '10px Courier'
             'shape-rendering': 'crispEdges'
           )
 

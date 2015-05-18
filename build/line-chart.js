@@ -1,6 +1,6 @@
 
 /*
-line-chart - v1.1.7 - 05 February 2015
+line-chart - v1.1.7 - 18 May 2015
 https://github.com/n3-charts/line-chart
 Copyright (c) 2015 n3-charts
  */
@@ -23,7 +23,6 @@ directive('linechart', [
       var dim, initialHandlers, isUpdatingOptions, promise, window_resize, _u;
       _u = n3utils;
       dim = _u.getDefaultMargins();
-      element[0].style['font-size'] = 0;
       scope.updateDimensions = function(dimensions) {
         var bottom, left, parent, right, top;
         parent = element[0].parentElement;
@@ -1105,7 +1104,6 @@ mod.factory('n3utils', [
         y2Axis = this.createAxis(y2, 'y2', axesOptions);
         style = function(group) {
           group.style({
-            'font': '10px Courier',
             'shape-rendering': 'crispEdges'
           });
           return group.selectAll('path').style({
