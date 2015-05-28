@@ -1,5 +1,5 @@
 ###
-line-chart - v1.1.7 - 18 May 2015
+line-chart - v1.1.7 - 28 May 2015
 https://github.com/n3-charts/line-chart
 Copyright (c) 2015 n3-charts
 ###
@@ -137,11 +137,11 @@ mod.factory('n3utils', ['$window', '$log', '$rootScope', ($window, $log, $rootSc
           ).append('g')
             .style(
               'fill': (s) -> s.color
-              'fill-opacity': 0.3
+              'fill-opacity': 0.15
             )
 
         pattern.append('rect')
-          .style('fill-opacity', 0.3)
+          .style('fill-opacity', 0.15)
           .attr('width', 60)
           .attr('height', 60)
 

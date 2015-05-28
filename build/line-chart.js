@@ -1,6 +1,6 @@
 
 /*
-line-chart - v1.1.7 - 18 May 2015
+line-chart - v1.1.7 - 28 May 2015
 https://github.com/n3-charts/line-chart
 Copyright (c) 2015 n3-charts
  */
@@ -138,9 +138,9 @@ mod.factory('n3utils', [
           'fill': function(s) {
             return s.color;
           },
-          'fill-opacity': 0.3
+          'fill-opacity': 0.15
         });
-        pattern.append('rect').style('fill-opacity', 0.3).attr('width', 60).attr('height', 60);
+        pattern.append('rect').style('fill-opacity', 0.15).attr('width', 60).attr('height', 60);
         pattern.append('path').attr('d', "M 10 0 l10 0 l -20 20 l 0 -10 z");
         pattern.append('path').attr('d', "M40 0 l10 0 l-50 50 l0 -10 z");
         pattern.append('path').attr('d', "M60 10 l0 10 l-40 40 l-10 0 z");
