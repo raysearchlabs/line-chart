@@ -12,11 +12,11 @@
           ).append('g')
             .style(
               'fill': (s) -> s.color
-              'fill-opacity': 0.3
+              'fill-opacity': 0.15
             )
 
         pattern.append('rect')
-          .style('fill-opacity', 0.3)
+          .style('fill-opacity', 0.15)
           .attr('width', 60)
           .attr('height', 60)
 
