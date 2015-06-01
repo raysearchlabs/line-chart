@@ -12,11 +12,11 @@
           ).append('g')
             .style(
               'fill': (s) -> s.color
-              'fill-opacity': 0.15
+              'fill-opacity': 0.3
             )
 
         pattern.append('rect')
-          .style('fill-opacity', 0.15)
+          .style('fill-opacity', 0.3)
           .attr('width', 60)
           .attr('height', 60)
 
@@ -51,7 +51,7 @@
                 return s.color if s.striped isnt true
                 return "url(#areaPattern_#{s.index})"
               )
-              .style('opacity', (s) -> if s.striped then '1' else '0.3')
+              .style('opacity', (s) -> if s.striped then '1' else '0.15')
               .attr('d', (d) -> drawers[d.axis](d.values))
 
         return this
